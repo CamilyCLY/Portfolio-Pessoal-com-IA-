@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio pessoal de um estudante de tecnologia.">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="#inicio">PORTFÓLIO.</a>
+
+      <div class="links">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </div>
+
+      <button id="tema" type="button" aria-label="Alternar tema">
+        🌙
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <p class="etiqueta">OLÁ! SEJA BEM-VINDO(A)</p>
+      <h1>Transformando ideias em <span>projetos digitais.</span></h1>
+      <p>Sou estudante de tecnologia e estou desenvolvendo
+        minhas habilidades na criação de sites.</p>
+      <a class="botao" href="#projetos">Conheça meus projetos ↗</a>
+    </section>
+
+    <section id="sobre" class="secao">
+      <p class="etiqueta">QUEM SOU EU</p>
+      <h2>Sobre mim</h2>
+      <p>
+        Olá! Meu nome é Camily. Sou estudante e tenho interesse
+        por tecnologia, programação e criação de sites.
+        Estou aprendendo HTML, CSS e JavaScript para transformar
+        minhas ideias em experiências digitais.
+      </p>
+      <p>
+        Meu objetivo é continuar aprendendo, desenvolver projetos
+        criativos e evoluir como profissional.
+      </p>
+    </section>
+
+    
+<section id="projetos" class="secao">
+  <p class="etiqueta">MEU TRABALHO</p>
+  <h2>Projetos</h2>
+  <p>Clique em um projeto para conhecê-lo.</p>
+
+  <div class="projetos">
+
+    <a class="projeto-link"
+       href="https://o-chao-esta-mentindo.vercel.app/"
+       target="_blank">
+      <article class="cartao">
+        <span>01 / Game </span>
+        <h3>Meu primeiro site ↗</h3>
+        <span class="abrir">Clique para abrir o projeto</span>
+      </article>
+    </a>
+
+    <a class="projeto-link"
+       href="https://pagina-home-skins2.vercel.app/"
+       target="_blank">
+      <article class="cartao">
+        <span>02 / Loja de Skins valorant e cs2</span>
+        <h3>Minha loja virtual ↗</h3>
+        <span class="abrir">Clique para abrir o projeto</span>
+      </article>
+    </a>
+
+    <a class="projeto-link"
+       href="https://website-puce-two-94.vercel.app/"
+       target="_blank"
+       rel="noopener noreferrer">
+      <article class="cartao">
+        <span>03 / ALLUXO</span>
+        <h3>Meu projeto interativo ↗</h3>
+        <span class="abrir">Clique para abrir o projeto</span>
+      </article>
+    </a>
+
+  </div>
+</section>
+
+
+   
+
+  <footer>
+    <p>© <span id="ano"></span> Camily — Feito com HTML, CSS e JS.</p>
+  </footer>
+</body>
+</html>
+
+<section id="contato" class="secao">
+  <p class="etiqueta">VAMOS CONVERSAR?</p>
+  <h2>Contato</h2>
+  <p>Entre em contato comigo pelos canais abaixo.</p>
+
+  <div class="dados-contato">
+    <div class="item-contato">
+      <span>✉️ E-mail</span>
+      <a href="mailto:SEUEMAIL@EXEMPLO.COM">
+        Camilylima@gmail.com
+      </a>
+    </div>
+
+    <div class="item-contato">
+      <span>📱 Telefone / WhatsApp</span>
+      <a
+        href="https://wa.me/55DDDNUMERO"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        (55) 99999-9999
+      </a>
+    </div>
+  </div>
+
+  <h3 class="titulo-formulario">Ou envie uma mensagem</h3>
+
+  <form id="formulario">
+    <label for="nome">Nome</label>
+    <input
+      id="nome"
+      name="nome"
+      type="text"
+      placeholder="Seu nome"
+      required
+    >
+
+    <label for="email">E-mail</label>
+    <input
+      id="email"
+      name="email"
+      type="email"
+      placeholder="seuemail@exemplo.com"
+      required
+    >
+
+    <label for="mensagem">Mensagem</label>
+    <textarea
+      id="mensagem"
+      name="mensagem"
+      placeholder="Escreva sua mensagem"
+      required
+    ></textarea>
+
+    <button class="botao" type="submit">
+      Enviar mensagem ↗
+    </button>
+
+    <p id="aviso" role="status" aria-live="polite"></p>
+  </form>
+</section>
+
